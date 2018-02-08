@@ -50,3 +50,41 @@ Aby sprawdzić zmodyfikowane pliki użyj polecenia: `git status`
 
 Wysłanie pliku(ów) następuje po poleceniu: `git push -u origin master`. Należy zauważyć, że po wskazaniu gałęzi *origin-master* kolejne komendy mogą ograniczyć się do `git push` do czasu zmiany gałęzi na inną.
 
+Pierwszy program w C
+-------------------------------------
+Aby utworzyć plik zawierający kod programu należy wykonać polecenie
+
+`touch <nazwa_pliku.c>`
+
+a następnie otworzyć plik w edytorze tekstowym np. Nano:
+
+`nano <nazwa_pliku.c`
+
+W edytorze należy napisać program zgodnie ze standardem języka C. Np.:
+
+
+    #include <stdio.h>
+    int main (void)
+    {
+    puts ("Hello World!");
+    return 0;
+    }
+ 
+
+Kompilowanie programu za pomocą GCC
+-------------------------------------
+Aby dokonać kompilacji napisanego programu należy zainstalować program GCC. W Linuksie należy użyć komendy 
+
+`sudo apt install gcc`
+
+Następnie w celu kompilowania używamy:
+
+`gcc <nazwa_pliku.c> -o <nazwa_pliku.o>`
+
+Można dodatkowo zastosować parametr `-Wall` w celu szczegółowego sprawdzenia kodu.
+
+Uruchamianie programu
+-----------------------
+W terminalu wpisujemy>
+
+`/.<nazwa_pliku.o>`
